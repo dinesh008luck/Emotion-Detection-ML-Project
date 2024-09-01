@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  data_injection:
+    cmd: python src/data/data_injection.py
+    deps:
+    - path: src/data/data_injection.py
+      hash: md5
+      md5: 470196a3829b0e1f9513098ccc4f485c
+      size: 3928
+    params:
+      params.yaml:
+        data_injection.test_size: 0.3
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 2e7527b3f4ccb9c55491cdaab61692bf.dir
+      size: 3116255
+      nfiles: 2
