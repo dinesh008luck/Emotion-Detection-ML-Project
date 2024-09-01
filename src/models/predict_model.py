@@ -99,9 +99,27 @@ def calculate_metrics(y_true, y_pred, y_pred_prob):
         logger.info(f"Recall: {recall}")
         logger.info(f"AUC: {auc}")
 
-        return accuracy, precision, recall, auc
+        metrics_dict = {
+            'Accuracy': accuracy,
+            'Precision': precision,
+            'Recall': recall,
+            'Auc': auc
+        }
+        logger.debug('Model evaluation metrics calculated')
+        return metrics_dict
     except Exception as e:
         logger.error(f"Error calculating metrics: {e}")
+        raise
+
+
+# Save metrics to JSON
+def save_metrics(metrics: dict, file_path: str) -> None:
+    try:
+        with open(file_path, 'w') as file:
+            json.dump(metrics, file, indent=4)
+        logger.debug('Metrics saved to %s', file_path)
+    except Exception as e:
+        logger.error('Error occurred while saving the metrics: %s', e)
         raise
 
 
@@ -110,6 +128,7 @@ def main():
     model_path = './models/trained_model.pkl'
     test_path = './data/features/feature_test.csv'
     output_path = './data/predictions/predicted_results.csv'
+    metrics_output_path = 'reports/metrics.json'
 
     try:
         params = load_params(params_path)
@@ -124,20 +143,12 @@ def main():
         y_pred = predict(model, X_test)
         y_pred_prob = model.predict_proba(X_test)
 
-        accuracy, precision, recall, auc = calculate_metrics(y_test, y_pred, y_pred_prob)
+        # Calculate metrics
+        metrics = calculate_metrics(y_test, y_pred, y_pred_prob)
 
-        # Save metrics to a JSON file
-        metrics_dict = {
-            'accuracy': accuracy,
-            'precision': precision,
-            'recall': recall,
-            'auc': auc
-        }
+        # Save metrics to JSON
+        save_metrics(metrics, metrics_output_path)
 
-        with open('metrics.json', 'w') as file:
-            json.dump(metrics_dict, file, indent=4)
-
-        evaluate_model(y_test, y_pred)
         save_predictions(y_pred, test_df, output_path)
 
         logger.info(f"Prediction completed with max_features: {max_features}")

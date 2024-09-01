@@ -20,3 +20,15 @@ weighted avg       0.50      0.50      0.45     12000
 
 Predictions saved successfully to ./data/predictions/predicted_results.csv.
 Prediction completed with max_features: 100
+Parameters loaded successfully.
+Model loaded successfully.
+Test data loaded successfully.
+Predictions made successfully.
+Accuracy: 0.5005
+Precision: 0.5032658350871777
+Recall: 0.5005
+AUC: 0.6770550809481316
+Model evaluation metrics calculated
+Metrics saved to reports/metrics.json
+Predictions saved successfully to ./data/predictions/predicted_results.csv.
+Prediction completed with max_features: 100
