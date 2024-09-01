@@ -4,3 +4,9 @@
 2024-09-01 19:45:33,100 - data_processing_logger - INFO - Text normalization completed successfully.
 2024-09-01 19:45:33,121 - data_processing_logger - INFO - Data successfully saved at ./data/processed\processed_train.csv.
 2024-09-01 19:45:33,130 - data_processing_logger - INFO - Data successfully saved at ./data/processed\processed_test.csv.
+2024-09-01 19:46:12,288 - data_processing_logger - INFO - NLTK resources downloaded successfully.
+2024-09-01 19:46:12,318 - data_processing_logger - INFO - Data successfully loaded from ./data/raw/train.csv and ./data/raw/test.csv.
+2024-09-01 19:46:17,905 - data_processing_logger - INFO - Text normalization completed successfully.
+2024-09-01 19:46:19,643 - data_processing_logger - INFO - Text normalization completed successfully.
+2024-09-01 19:46:19,664 - data_processing_logger - INFO - Data successfully saved at ./data/processed\processed_train.csv.
+2024-09-01 19:46:19,673 - data_processing_logger - INFO - Data successfully saved at ./data/processed\processed_test.csv.
