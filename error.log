@@ -1,0 +1,6 @@
+2024-09-01 19:08:48,549- data_injection_loger- ERROR- Error parsing the CSV file at URL
+2024-09-01 19:08:48,551- data_injection_loger- ERROR- Unexpected error
+2024-09-01 19:08:48,551- data_injection_loger- ERROR- Fail to complete the data injection error in main
+2024-09-01 19:12:20,725- data_injection_loger- ERROR- Error parsing the CSV file at URL
+2024-09-01 19:12:20,725- data_injection_loger- ERROR- Unexpected error
+2024-09-01 19:12:20,727- data_injection_loger- ERROR- Fail to complete the data injection error in main
