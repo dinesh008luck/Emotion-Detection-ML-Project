@@ -3,3 +3,8 @@
 2024-09-01 19:46:21,378 - feature_engineering_logger - INFO - Data preprocessing completed successfully.
 2024-09-01 19:46:21,576 - feature_engineering_logger - INFO - Bag of Words transformation completed successfully.
 2024-09-01 19:46:21,868 - feature_engineering_logger - INFO - Data successfully saved at ./data/features.
+2024-09-03 22:39:00,627 - feature_engineering_logger - INFO - Parameters loaded successfully.
+2024-09-03 22:39:00,663 - feature_engineering_logger - INFO - Data successfully loaded from ./data/processed/processed_train.csv and ./data/processed/processed_test.csv.
+2024-09-03 22:39:00,668 - feature_engineering_logger - INFO - Data preprocessing completed successfully.
+2024-09-03 22:39:00,968 - feature_engineering_logger - INFO - Bag of Words transformation completed successfully.
+2024-09-03 22:39:01,389 - feature_engineering_logger - INFO - Data successfully saved at ./data/features.

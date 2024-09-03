@@ -32,3 +32,15 @@ Model evaluation metrics calculated
 Metrics saved to reports/metrics.json
 Predictions saved successfully to ./data/predictions/predicted_results.csv.
 Prediction completed with max_features: 100
+Parameters loaded successfully.
+Model loaded successfully.
+Test data loaded successfully.
+Predictions made successfully.
+Accuracy: 0.4989375
+Precision: 0.49429987825827504
+Recall: 0.4989375
+AUC: 0.6765789343303107
+Model evaluation metrics calculated
+Metrics saved to reports/metrics.json
+Predictions saved successfully to ./data/predictions/predicted_results.csv.
+Prediction completed with max_features: 90
